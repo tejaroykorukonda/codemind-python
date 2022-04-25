@@ -1,5 +1,5 @@
-PI = 3.14
+pi = 3.14
 radius = float(input())
-area = PI * radius * radius
+area = pi * radius * radius
 
 print("%.2f" %area)
