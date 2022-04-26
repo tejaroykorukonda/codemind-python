@@ -1,2 +1,2 @@
-n=int(input())      #integer division
-print(n//10)
+x=int(input())
+print(x//10)
