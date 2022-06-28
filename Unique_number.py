@@ -1,6 +1,6 @@
-n=input()
-n=list(n)
-s=set(n)
+n = input()
+n = list(n)
+s = set(n)
 if len(n)==len(s):
     print("Unique Number")
 else:
