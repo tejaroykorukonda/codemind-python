@@ -1,4 +1,4 @@
-x,y=map(int,input().split())
+x , y = map(int,input().split())
 l=[]
 m=[]
 h=[]
@@ -11,7 +11,7 @@ for j in range(1,y+1):
 for k in l:
     for n in m:
         if k==n:
-            h.append(k)
+           h.append(k)
 if h!=0:
     print(max(h))
 else:
