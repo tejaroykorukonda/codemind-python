@@ -1,6 +1,5 @@
-
-a=int(input())
-b=int(input())
+a = int (input())
+b = int (input())
 s=0
 for i in range(a,b+1):
     c=0
