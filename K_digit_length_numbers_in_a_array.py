@@ -1,16 +1,20 @@
 def dig(n):
-    c=0
     if n==0:
         return 1
-    elif n<0:
-        n = n*-1
-    while(n):
+    c=0
+    if n<0:
+        n=-1*n
+    while n:
         n=n//10
         c+=1
     return c
-x , y = map(int,input().split())
-l = list(map(int,input().split()))
-a=[]
-for i in range(x):
-   a.append(dig(l[i]))
-print(a.count(y))
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+l=[]
+c=0
+for i in range(n):
+    l.append(dig(a[i]))
+for i in range(n):
+    if dig(a[i])==m:
+        c+=1
+print(c)
