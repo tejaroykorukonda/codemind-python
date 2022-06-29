@@ -1,18 +1,16 @@
 def dig(n):
-    if n==0:
-        return 1
-    c=0
+    v=0
     if n<0:
-        n=-1*n
-    while n:
-        n=n//10
-        c+=1
-    return c
+        n=n*-1
+    while n!=0:
+        n//=10
+        v+=1
+    return v
 n=int(input())
 a=list(map(int,input().split()))
-l=[]
+c=[]
 for i in range(n):
-    l.append(dig(a[i]))
+    c.append(dig(a[i]))
 for i in range(n):
-    if dig(a[i])==max(l):
+    if dig(a[i])==max(c):
         print(a[i],end=' ')
