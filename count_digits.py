@@ -1,17 +1,17 @@
 def dig(n):
-    c=0
     if n==0:
         return 1
-    elif n<0:
-        n = n*-1
-    while(n):
+    c=0
+    if n<0:
+        n=-1*n
+    while n:
         n=n//10
         c+=1
     return c
-x = int(input())
-l = list(map(int,input().split()))
-a=[]
-for i in range(x):
-   a.append(dig(l[i]))
-for j in a:
-    print(j,end=" ")
+n=int(input())
+a=list(map(int,input().split()))
+l=[]
+for i in range(n):
+    l.append(dig(a[i]))
+for j in l:
+    print(j,end=' ')
